@@ -6,6 +6,14 @@
 <body>
     <h1>Lista de Mascotas</h1>
     <a href="/mascotas/nuevo">Agregar Mascota</a>
+    <div>
+        <a th:href="@{/mascotas/reporte/excel}">
+            <button>Exportar a Excel</button>
+        </a>
+        <a th:href="@{/mascotas/reporte/pdf}">
+            <button>Exportar a PDF</button>
+        </a>
+    </div>
     <table>
         <thead>
             <tr>
